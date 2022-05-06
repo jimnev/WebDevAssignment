@@ -1,0 +1,171 @@
+html, body {
+  width: auto!important; overflow-x: hidden!important
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #add6de;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #429EBD;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  text-align: center;
+  border-radius: 40px;
+  z-index:1; /*Set z index so body text does not clip while scrolling*/
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 24px 16px;
+  padding-left: 4.5%;
+  padding-right: 4.5%;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #9fe7f5;
+  color: #ED8728;
+}
+
+.navbar .current{
+  background-color: #9fe7f5;
+  color: #ED8728;
+}
+
+.fill {
+    text-align: center;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+    position: fixed;
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 110%;
+    min-height: 100%;
+    border-bottom: 3px solid #429EBD;
+}
+
+.centered {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 65px;
+  font-family: cursive;
+  color: #ED8728;
+  font-weight: normal;
+  text-shadow: 0.0px 10.0px 0.02px #000, 9.8px 2.1px 0.02px #000, 4.2px -9.1px 0.02px #000, -8.0px -6.0px 0.02px #000, -7.6px 6.5px 0.02px #000, 4.8px 8.8px 0.02px #000, 9.6px -2.8px 0.02px #000, -0.7px -10.0px 0.02px #000, -9.9px -1.5px 0.02px #000, -3.5px 9.4px 0.02px #000, 8.4px 5.4px 0.02px #000, 7.1px -7.0px 0.02px #000, -5.4px -8.4px 0.02px #000, -9.4px 3.5px 0.02px #000, 1.4px 9.9px 0.02px #000, 10.0px 0.8px 0.02px #000, 2.9px -9.6px 0.02px #000, -8.7px -4.8px 0.02px #000, -6.6px 7.5px 0.02px #000, 5.9px 8.0px 0.02px #000, 9.1px -4.1px 0.02px #000, -2.1px -9.8px 0.02px #000, -10.0px -0.1px 0.02px #000, -2.2px 9.8px 0.02px #000, 9.1px 4.2px 0.02px #000, 6.1px -8.0px 0.02px #000, -6.5px -7.6px 0.02px #000, -8.8px 4.7px 0.02px #000, 2.7px 9.6px 0.02px #000, 10.0px -0.6px 0.02px #000, 1.5px -9.9px 0.02px #000, -9.3px -3.6px 0.02px #000, -5.5px 8.4px 0.02px #000, 7.0px 7.2px 0.02px #000, 8.5px -5.3px 0.02px #000, -3.4px -9.4px 0.02px #000, -9.9px 1.3px 0.02px #000, -0.8px 10.0px 0.02px #000, 9.6px 2.9px 0.02px #000, 4.9px -8.7px 0.02px #000, -7.5px -6.7px 0.02px #000, -8.1px 5.9px 0.02px #000, 4.0px 9.2px 0.02px #000, 9.8px -2.0px 0.02px #000, 0.2px -10.0px 0.02px #000, -9.7px -2.3px 0.02px #000, -4.3px 9.0px 0.02px #000, 7.9px 6.1px 0.02px #000
+}
+
+.footer{
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+  color: black;
+  position: fixed;
+  padding: 10px 0px 35px 10px;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background: #429EBD;
+  overflow: hidden;
+  z-index:1;
+  border-radius: 40px;
+}
+
+.parent{
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0%;
+  padding-bottom: 3%;
+}
+
+.parent, h1{
+  text-align: center;
+  font-size: 40px;
+  font-family: cursive;
+  font-weight: bolder;
+}
+
+.child1, .child2 {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px 120px 10px 120px;
+}
+
+.child1, .child2, h2{
+  font-size: 30px;
+  font-family: cursive;
+  font-weight: lighter;
+  margin-top: 1.5%;
+}
+
+.child1{
+  border: 2px dashed #ED8728;
+  border-radius: 8px;
+  margin-bottom: 5%;
+}
+
+.child2{
+  border: 2px dashed #ED8728;
+  border-radius: 8px;
+  margin-bottom: 5%;
+}
+
+p{
+  font-size: 20px;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  color: white;
+}
+
+.fa-instagram {
+  color: white;
+}
